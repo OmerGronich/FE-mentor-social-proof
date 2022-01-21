@@ -1,0 +1,50 @@
+.quotes {
+  --flow-space: 1rem;
+  align-items: stretch;
+
+  blockquote {
+    height: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    background: var(--clr-primary-700);
+    color: var(--clr-neutral-200);
+    text-align: left;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: var(--br);
+
+    .split {
+      margin-bottom: 1.625rem;
+      flex-direction: row;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 2.5rem;
+      margin-right: 1.4375rem;
+    }
+
+    .name {
+      font-weight: var(--fw-bold);
+      margin-bottom: 0.3125rem;
+    }
+
+    .status {
+      color: var(--clr-primary-300);
+    }
+
+    .quote-text {
+      line-height: 1.375rem;
+    }
+  }
+
+  @media (min-width: 50em) {
+    li {
+      &:nth-child(2) {
+        transform: translateY(0.8rem);
+      }
+      &:nth-child(3) {
+        transform: translateY(1.6rem);
+      }
+    }
+  }
+}
